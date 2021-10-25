@@ -1,6 +1,6 @@
 {
   "name": "@chec/webhook-verifier",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "A lightweight tool to verify the validity of incoming Chec webhooks",
   "repository": "git@github.com:chec/webhook-verifier.git",
   "author": "Robbie Averill <robbie@chec.io>",

@@ -22,10 +22,6 @@
 	<a href="https://commercejs.com">commercejs.com</a> | <a href="https://twitter.com/commercejs">@commercejs</a> | <a href="http://slack.commercejs.com">Slack</a>
 </p>
 
-
-A lightweight JavaScript tool for verifying the validity of incoming webhook payloads from the Chec API. This script
-is designed to run in a Node.js context, e.g. a serverless function/Lambda.
-
 ## Installation
 
 ```

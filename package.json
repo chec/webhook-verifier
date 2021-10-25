@@ -15,9 +15,6 @@
     "prepare": "npm run build",
     "test": "jest"
   },
-  "dependencies": {
-    "crypto": "^1.0.1"
-  },
   "devDependencies": {
     "@babel/preset-env": "^7.15.8",
     "@babel/preset-typescript": "^7.15.0",

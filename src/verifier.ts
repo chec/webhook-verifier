@@ -5,7 +5,7 @@
  * Released under the BSD-3-Clause license (see LICENSE.md).
  */
 
-import { VerificationError } from './errors';
+import {VerificationError} from './errors';
 // @ts-ignore
 import * as crypto from 'crypto';
 

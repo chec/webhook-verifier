@@ -5,7 +5,6 @@
   "repository": "git@github.com:chec/webhook-verifier.git",
   "author": "Robbie Averill <robbie@chec.io>",
   "license": "BSD-3-Clause",
-  "private": false,
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [

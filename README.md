@@ -7,7 +7,7 @@
 
 <p align="center">
 	<a href="https://github.com/chec/webhook-verifier/actions">
-		<img src="https://img.shields.io/github/checks-status/chec/webhook-verifier/master" alt="CircleCI" />
+		<img src="https://github.com/github/docs/actions/workflows/test.yml/badge.svg" alt="CI status" />
 	</a>
 	<a href="https://npmjs.org/package/@chec/webhook-verifier">
 		<img src="https://img.shields.io/npm/v/@chec/webhook-verifier.svg" alt="Version" />

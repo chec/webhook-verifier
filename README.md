@@ -34,15 +34,10 @@ npm install @chec/webhook-verifier
 yarn add @chec/webhook-verifier
 ```
 
-## Configuration
-
-Define the following in your `.env` or environment file:
-
-* `CHEC_WEBHOOK_SIGNING_KEY`: the signing key for your account, available in the Webhooks section of the Chec Dashboard
-
 ## Usage
 
-Import `verifyWebhook` and use it at the start of your handler method:
+Import `verifyWebhook` and use it at the start of your handler method. Provide your Chec webhook signing key as the
+second argument (available in your [Chec Dashboard](https://dashboard.chec.io/settings/webhooks)):
 
 ```js
 import { verifyWebhook } from '@chec/webhook-verifier';

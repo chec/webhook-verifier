@@ -1,0 +1,27 @@
+# See: https://github.com/actions/typescript-action
+name: Run TSC
+
+on:
+  push:
+    branches:
+      - master
+    paths-ignore:
+      - '**.md'
+  pull_request:
+    paths-ignore:
+      - '**.md'
+  workflow_dispatch:
+
+jobs:
+  check-types:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set Node.js 12.x
+        uses: actions/setup-node@v2.4.1
+        with:
+          node-version: 12.x
+      - name: Install dependencies
+        run: yarn --dev
+      - name: Build and check types
+        run: yarn build

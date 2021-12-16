@@ -3,6 +3,15 @@ import { VerificationError } from '../src/errors';
 import * as crypto from 'crypto';
 
 describe('verifyWebhook', () => {
+  it('throws an error when the payload is not an object', () => {
+    function verify() {
+      // @ts-ignore
+      verifyWebhook('', 'bar');
+    }
+    expect(verify).toThrowError(VerificationError);
+    expect(verify).toThrowError('The provided payload is not an object.');
+  });
+
   it('throws an error when the signature is missing', () => {
     function verify() {
       verifyWebhook({signature: '', created: 1}, 'bar');

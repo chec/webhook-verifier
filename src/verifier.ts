@@ -6,7 +6,6 @@
  */
 
 import {VerificationError} from './errors';
-// @ts-ignore
 import * as crypto from 'crypto';
 
 interface Payload {
@@ -15,6 +14,10 @@ interface Payload {
 }
 
 export function verifyWebhook(data: Payload, signingKey: string, maxAgeSeconds: number = 300): void {
+  if (typeof data !== 'object') {
+    throw new VerificationError('The provided payload is not an object.');
+  }
+
   // Extract the signature
   const { signature } = data;
   delete data.signature;
